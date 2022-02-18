@@ -1,0 +1,79 @@
+:root {
+
+    --primary-color : #4c79d3;
+    --secondary-color: #ffffff;
+    --tertiary-color : #4e0070;
+}
+#login {
+    background: linear-gradient(120deg, var(--primary-color) 44.9% , var(--secondary-color) 45%) no-repeat fixed;    
+}
+header{
+    border-bottom: 1px solid #bebcbc;
+    padding: 5px;
+    background-color: var(--secondary-color);
+}
+
+.text-login{ 
+    color: var(--secondary-color) ;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#app {
+    background: linear-gradient(120deg, var(--secondary-color) 44.9% , var(--primary-color) 45%) no-repeat fixed;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.tertiary-color{
+    color: var(--tertiary-color);
+}
+
+.icon-detail{
+    font-size: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.coins {
+    position: absolute;
+    bottom: 100px;
+}
+
+.buttom-login {
+
+    border-radius: 10px;
+    background-color: var(--tertiary-color) ;
+    color: var(--secondary-color) ;
+    width: 50%;
+    margin: 0 25%;
+    
+}
+.buttom-default {
+
+    border-radius: 10px;
+    background-color: var(--tertiary-color) ;
+    color: var(--secondary-color) ;
+    
+}
+.buttom-login:hover, .buttom-default:hover {
+    background: var(--primary-color) ;
+    color: var(--secondary-color) ;
+}
+.link-default {
+    color: var(--tertiary-color) ;
+    cursor: pointer;
+    
+}
+.link-default:hover {
+    color: var(--primary-color);
+}
+
+.info{
+
+    background-color: var(--secondary-color);
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
