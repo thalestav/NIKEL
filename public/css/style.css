@@ -42,7 +42,7 @@ header{
     bottom: 100px;
 }
 
-.buttom-login {
+.button-login {
 
     border-radius: 10px;
     background-color: var(--tertiary-color) ;
@@ -51,14 +51,36 @@ header{
     margin: 0 25%;
     
 }
-.buttom-default {
+.button-default {
 
     border-radius: 10px;
     background-color: var(--tertiary-color) ;
     color: var(--secondary-color) ;
     
 }
-.buttom-login:hover, .buttom-default:hover {
+.button-cancel {
+    border-radius: 10px;
+     
+}
+.button-float {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 35px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 0 !important;
+    border: 2px solid var(--tertiary-color);
+}
+.button-float:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);   
+    color: var(--primary-color);
+}
+.button-login:hover, .button-default:hover {
     background: var(--primary-color) ;
     color: var(--secondary-color) ;
 }
