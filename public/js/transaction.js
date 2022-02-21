@@ -10,7 +10,7 @@ document.getElementById("buttom-logout").addEventListener("click", logout);
 
 
 //adicionar lancamento
-document.getElementById("transaction-form").addEventListener("submit", function(e){
+document.getElementById("transaction-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const value = parseFloat(document.getElementById("value-input").value);
@@ -22,12 +22,12 @@ document.getElementById("transaction-form").addEventListener("submit", function(
 
         value: value, type: type, description: description, date: date
     });
-    
+
     saveData(data);
     e.target.reset();
     myModal.hide();
 
-    getTransactions ();
+    getTransactions();
 
 
     getCashIn();
@@ -40,23 +40,23 @@ document.getElementById("transaction-form").addEventListener("submit", function(
 checkLogged();
 
 function checkLogged() {
-    if(session){
+    if (session) {
         sessionStorage.setItem("logged", session);
         logged = session;
     }
 
-    if(!logged){
+    if (!logged) {
         window.location.href = "index.html";
         return;
     }
 
     const dataUser = localStorage.getItem(logged);
-    if(dataUser) {
+    if (dataUser) {
         data = JSON.parse(dataUser);
     }
 
     getTransactions();
-    
+
 }
 
 function logout() {
@@ -70,11 +70,11 @@ function getTransactions() {
     const transactions = data.transactions;
     let transactionsHtml = ``;
 
-    if(transactions.length) {
+    if (transactions.length) {
         transactions.forEach((item) => {
             let type = "Entrada";
-            
-            if(item.type === "2") {
+
+            if (item.type === "2") {
                 type = "Saída"
             }
 
@@ -94,7 +94,7 @@ function getTransactions() {
 };
 
 
-function saveData(data){
+function saveData(data) {
 
     localStorage.setItem(data.login, JSON.stringify(data));
 }

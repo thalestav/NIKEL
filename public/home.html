@@ -84,29 +84,32 @@
                                 <hr>
                             </div>
                         </div>
-                        <div class="row"> <!--estudar melhor a questao de row e col-->
+                        <div class="row">
+                            <!--estudar melhor a questao de row e col-->
                             <div class="col-6">
                                 <div class="container p-0" id="cash-in-list">
-                                    
+
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="container p-0" id="cash-out-list">
-                                    
+
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="button" class="btn button-default" id="transactions-button">Ver todas</button>
+                                <button type="button" class="btn button-default" id="transactions-button">Ver
+                                    todas</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn button-float" data-bs-toggle="modal"
-            data-bs-target="#transaction-modal"><i class="bi bi-plus"></i></button>
+            <button class="btn button-float" data-bs-toggle="modal" data-bs-target="#transaction-modal"><i
+                    class="bi bi-plus"></i></button>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="transaction-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="transaction-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -121,32 +124,35 @@
                                 <label for="value-input" class="form-label">Valor</label>
                                 <input type="number" step="any" class="form-control" id="value-input"
                                     aria-describedby="emailHelp" required>
-                                
+
                             </div>
                             <div class="mb-3">
                                 <label for="description-input" class="form-label">Descrição</label>
                                 <input type="text" class="form-control" id="description-input" required>
-                                
+
                             </div>
                             <div class="mb-3">
                                 <label for="date-input" class="form-label">Data</label>
                                 <input type="date" class="form-control" id="date-input" required>
-                                
+
                             </div>
                             <div class="mb-3">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="type-input" id="inlineRadio1" value="1"checked>
+                                    <input class="form-check-input" type="radio" name="type-input" id="inlineRadio1"
+                                        value="1" checked>
                                     <label class="form-check-label" for="inlineRadio1">Entrada</label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="type-input" id="inlineRadio2" value="2">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="type-input" id="inlineRadio2"
+                                        value="2">
                                     <label class="form-check-label" for="inlineRadio2">Saída</label>
-                                  </div>                                  
+                                </div>
                             </div>
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-secondary button-cancel"
+                                data-bs-dismiss="modal">Cancelar</button>
                             <button type="submit" class="btn button-default">Adicionar</button>
                         </div>
                     </form>
